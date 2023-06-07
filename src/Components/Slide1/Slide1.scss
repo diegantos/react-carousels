@@ -1,0 +1,32 @@
+body {
+    background: #272727;
+
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Swiper{
+    overflow: hidden;
+}
+.swiper {
+    margin: 5em;
+    padding: 5em 2em;
+}
+.swiper-wrapper{
+    margin: 0 1em;
+    max-width: fit-content;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 25em;
+    height: 20em;
+    margin: 1em;
+    border-radius: 1em;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+.swiper-slide-prev{
+    transform: skewY(15deg);
+}
