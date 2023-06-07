@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide} from 'swiper/react'
 import { EffectCoverflow } from 'swiper';
 
-import 'swiper/css'
+import 'swiper/scss'
 import 'swiper/css/effect-coverflow'
 import './Slide1.scss'
 
@@ -26,14 +26,14 @@ export const Slide1 = () => {
           slidesPerView="auto"
           className='Swiper'
         //   loop
-        //   effect="coverflow"
-        //   coverflowEffect={{
-        //     rotate: 50,
-        //     stretch: 0,
-        //     depth: 100,
-        //     modifier: 2.5,
-        //     slideShadows: true,
-        //   }}
+          effect="coverflow"
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: true,
+          }}
           modules={{ EffectCoverflow }}
         >
             {slides.map(({ id, url }) => (
