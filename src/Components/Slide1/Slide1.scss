@@ -3,8 +3,8 @@ body {
 }
 .swiper {
     margin: 5em auto;
-    padding: 0 0 7em;
-    max-width: 45em;
+    padding: 1em 0 7em;
+    max-width: 50%;
 }
 .swiper-wrapper{
     height: 20em;
@@ -15,20 +15,4 @@ body {
     width: 15em;
     height: 20em;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0006);
-    // transform: scale(0.85);
-    // transition: all 0.3s ease;
 }
-// .swiper-slide-active{
-//     transform: scale(1);
-//     transition: all 0.3s ease;
-// }
-// .swiper-slide-prev{
-//     transform: perspective(800px) rotateY(15deg) skewY(-3deg) scale(0.85);
-//     transform-origin: left center;
-//     transition: all 0.3s ease;
-// }
-// .swiper-slide-next{
-//     transform: perspective(800px) rotateY(-15deg) skewY(3deg) scale(0.85);
-//     transform-origin: right center;
-//     transition: all 0.3s ease;
-// }
