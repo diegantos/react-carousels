@@ -7,29 +7,34 @@ body {
     justify-content: center;
     align-items: center;
 }
-.Swiper{
-    overflow: hidden;
-}
 .swiper {
     margin: 5em;
     padding: 5em 2em;
 }
 .swiper-wrapper{
     margin: 0 1em;
-    max-width: fit-content;
 }
 .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 15em;
     height: 20em;
-    margin: 0 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0006);
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.swiper-slide-active{
+    transform: scale(1);
+    transition: all 0.3s ease;
 }
 .swiper-slide-prev{
-    transform: rotate(15deg);
+    transform: perspective(800px) rotateY(15deg) skewY(-3deg) scale(0.9);
+    transform-origin: left center;
+    transition: all 0.3s ease;
 }
 .swiper-slide-next{
-    transform: perspective(15deg);
+    transform: perspective(800px) rotateY(-15deg) skewY(3deg) scale(0.9);
+    transform-origin: right center;
+    transition: all 0.3s ease;
 }
