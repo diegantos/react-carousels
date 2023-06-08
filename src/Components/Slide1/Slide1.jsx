@@ -25,7 +25,7 @@ export const Slide1 = () => {
           grabCursor
           centeredSlides
           slidesPerView="auto"
-          // loop
+          loop
           effect="coverflow"
           coverflowEffect={{
             rotate: 50,

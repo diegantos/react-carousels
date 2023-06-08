@@ -2,8 +2,9 @@ body {
     background: #272727;
 }
 .swiper {
-    margin: 5em 1em;
+    margin: 5em auto;
     padding: 0 0 7em;
+    max-width: 45em;
 }
 .swiper-wrapper{
     height: 20em;
