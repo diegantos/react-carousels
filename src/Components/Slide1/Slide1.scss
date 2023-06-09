@@ -16,3 +16,9 @@ body {
     height: 20em;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0006);
 }
+
+@media screen and (min-width: 1580px) {
+    .swiper{
+        max-width: 40%;
+    }
+}
