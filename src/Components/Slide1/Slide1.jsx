@@ -27,6 +27,7 @@ export const Slide1 = () => {
           slidesPerView="auto"
           loop
           effect="coverflow"
+          modules={{ EffectCoverflow }}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -34,11 +35,12 @@ export const Slide1 = () => {
             modifier: 1,
             slideShadows: true,
           }}
-          modules={{ EffectCoverflow }}
         >
             {slides.map(({ id, url }) => (
-                <SwiperSlide key={id} style={{ backgroundImage: `url(${url})` }}>
-                {/* <img src={url} alt="car img" /> */}
+                <SwiperSlide 
+                  key={id} 
+                  style={{ backgroundImage: `url(${url})` }}>
+                  {/* <img src={url} alt="car img" /> */}
                 </SwiperSlide>
             ))}
         </Swiper>
