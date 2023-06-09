@@ -4,13 +4,11 @@ import './Spinner.scss'
 export const Spinner = () => {
     return(
         <div className="Spinner">
-            <ClipLoader 
+            <ClipLoader
                 color="#36d7b7"
-                // loading={loading}
+                loading={true}
                 // cssOverride={override}
                 size={80}
-                aria-label="Loading Spinner"
-                data-testid="loader"
                 speedMultiplier={1}
             />
         </div>
